@@ -99,6 +99,8 @@
 	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
+	# Enable filesystem cache, to speed things up
+	fscache = true
 
 [color]
 
@@ -132,6 +134,8 @@
 
 [diff]
 
+	#Use Beyond Compare
+	tool = bcompare
 	# Detect copies as well as renames
 	renames = copies
 	# Enable an experimental heuristic that shifts the hunk boundary in an
@@ -143,6 +147,14 @@
 	# Use `hexdump` to diff binary files
 	textconv = hexdump -v -C
 
+[difftool "bcompare"]
+
+	cmd = "/usr/local/bin/bcompare" \"$LOCAL\" \"$REMOTE\"
+
+[gui]
+
+	gcwarning = false
+
 [help]
 
 	# Automatically correct and execute mistyped commands
@@ -152,6 +164,13 @@
 
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	#Use Beyond Compare
+	tool = bcompare
+
+[mergetool "bcompare"]
+
+	cmd = "/usr/local/bin/bcompare" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
 
 [push]
 
@@ -161,6 +180,11 @@
 	default = matching
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
+
+[user]
+
+	name = Laura Little
+	email = laura.nathanson@gmail.com
 
 # URL shorthands
 

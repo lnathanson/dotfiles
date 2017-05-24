@@ -1,5 +1,13 @@
+#add python to path
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}";
+
+#add upgraded version of php (7.1.4) to path
+PATH="/usr/local/php5/bin:${PATH}";
+
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+PATH="$HOME/bin:$PATH";
+
+export PATH;
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
