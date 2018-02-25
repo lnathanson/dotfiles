@@ -1,0 +1,21 @@
+PATH="/usr/local/bin:$PATH"
+
+# textmate
+PATH="/usr/local/bin/mate:$PATH"
+
+# git
+PATH="/usr/local/git/bin:$PATH"
+
+# yarn
+PATH="$HOME/.yarn/bin:$PATH"
+
+# composer (php package manager)
+PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# rvm (ruby version manager)
+PATH="$HOME/.rvm/bin:$PATH"
+
+# mongo db
+PATH="$HOME/mongodata/db:$PATH"
+
+export PATH
