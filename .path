@@ -1,10 +1,5 @@
-PATH="/usr/local/bin:$PATH"
-
 # textmate
 PATH="/usr/local/bin/mate:$PATH"
-
-# git
-PATH="/usr/local/git/bin:$PATH"
 
 # yarn
 PATH="$HOME/.yarn/bin:$PATH"
