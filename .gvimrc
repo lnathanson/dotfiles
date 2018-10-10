@@ -1,6 +1,6 @@
-" Use the Solarized Dark theme
+" Use the Yonce theme
 set background=dark
-colorscheme solarized
+colorscheme yonce
 " Use 14pt Monaco
 set guifont=Monaco:h14
 " Don’t blink cursor in normal mode

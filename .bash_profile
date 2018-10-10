@@ -1,17 +1,4 @@
 source ~/.profile
-#add python to path
-PATH="~/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}";
-PATH="~/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}";
-
-#add pip (python package manager) installed executables to path
-PATH="~/Library/Python/3.6/bin:${PATH}";
-
-#add upgraded version of php (7.1.4) to path
-PATH="/usr/local/php5/bin:${PATH}";
-
-# Add `~/bin` to the `$PATH`
-PATH="$HOME/bin:$PATH";
-export PATH
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -63,8 +50,3 @@ else
   #reset text color
   tput sgr0;
 fi
-
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH

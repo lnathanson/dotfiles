@@ -1,7 +1,7 @@
-" Use the Solarized Dark theme
+" Use the Yonce theme
 set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
+colorscheme yonce
+let g:yonce_termtrans=1
 
 " Make Vim more useful
 set nocompatible

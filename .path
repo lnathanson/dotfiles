@@ -13,4 +13,17 @@ PATH="$HOME/.rvm/bin:$PATH"
 # mongo db
 PATH="$HOME/mongodata/db:$PATH"
 
+# python
+PATH="~/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
+PATH="~/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH"
+
+# pip (python package manager)
+PATH="~/Library/Python/3.6/bin:$PATH"
+
+# php (7.1.4)
+PATH="/usr/local/php5/bin:$PATH"
+
+# ~/bin
+PATH="$HOME/bin:$PATH"
+
 export PATH
